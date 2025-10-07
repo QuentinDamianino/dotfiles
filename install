@@ -4,3 +4,6 @@ DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 rm -rf $HOME/.config/ghostty
 ln -s $DOTFILES/ghostty $HOME/.config/ghostty
+
+rm -rf $HOME/.config/i3
+ln -s $DOTFILES/i3 $HOME/.config/i3
