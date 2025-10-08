@@ -7,3 +7,9 @@ ln -s $DOTFILES/ghostty $HOME/.config/ghostty
 
 rm -rf $HOME/.config/i3
 ln -s $DOTFILES/i3 $HOME/.config/i3
+
+ln -sf $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+mkdir -p $HOME/.local/bin
+rm -rf $HOME/.local/bin/t
+ln -s $DOTFILES/scripts/t $HOME/.local/bin/t
