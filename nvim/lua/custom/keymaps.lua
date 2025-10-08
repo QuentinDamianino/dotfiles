@@ -8,7 +8,7 @@ vim.keymap.set('v', 'y', 'myy`y')
 
 vim.keymap.set('v', 'p', '"_dP')
 
-vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
