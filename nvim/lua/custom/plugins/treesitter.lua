@@ -8,9 +8,28 @@ return {
         auto_install = true,
         highlight = {
           enable = true,
-          additional_vim_regex_highlighting = { 'ruby' },
         },
-        indent = { enable = true, disable = { 'ruby' } },
+      })
+
+      vim.api.nvim_create_autocmd('FileType', {
+        pattern = 'php',
+        callback = function()
+          vim.bo.commentstring = '// %s'
+        end,
+      })
+
+      vim.api.nvim_create_autocmd('FileType', {
+        pattern = 'blade',
+        callback = function()
+          vim.bo.commentstring = '{{-- %s --}}'
+        end,
+      })
+
+      vim.api.nvim_create_autocmd('FileType', {
+        pattern = 'twig',
+        callback = function()
+          vim.bo.commentstring = '{# %s #}'
+        end,
       })
     end,
 }
