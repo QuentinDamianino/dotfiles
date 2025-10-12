@@ -10,6 +10,9 @@ return {
       highlight = {
         enable = true,
       },
+      indent = {
+        enable = true,
+      },
       textobjects = {
         select = {
           enable = true,
