@@ -125,6 +125,8 @@ return {
           },
         },
       },
+      prettier = {},
+      pint = {},
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
