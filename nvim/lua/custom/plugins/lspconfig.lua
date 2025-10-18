@@ -98,15 +98,17 @@ return {
       lua_ls = {
         settings = {
           Lua = {
+            runtime = { version = 'LuaJIT' },
             completion = {
               callSnippet = 'Replace',
             },
             diagnostics = {
-              globals = { 'vim' },
+              globals = { 'vim', 'love' },
             },
             workspace = {
               library = {
                 vim.env.VIMRUNTIME,
+                '${3rd}/love2d/library',
               },
               checkThirdParty = false,
             },
