@@ -10,6 +10,7 @@ font pango:0xProtoNerdFont 9
 floating_modifier $super
 
 #autostart
+exec_always --no-startup-id xinput set-prop "pointer:Logitech MX Vertical" "libinput Accel Profile Enabled" 0, 1, 0
 exec --no-startup-id feh --bg-fill ~/.wallpaper-main.jpg --bg-fill ~/.wallpaper-main.jpg --bg-fill ~/.wallpaper-vertical.jpg
 exec --no-startup-id picom
 exec --no-startup-id redshift -O 2500
