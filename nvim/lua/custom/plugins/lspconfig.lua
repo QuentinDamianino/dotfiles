@@ -120,7 +120,15 @@ return {
           },
         },
       },
-      intelephense = {},
+      intelephense = {
+        settings = {
+          intelephense = {
+            files = {
+              maxSize = 90000000,
+            },
+          },
+        },
+      },
       tailwindcss = {},
       jsonls = {
         settings = {
@@ -143,7 +151,7 @@ return {
     require('mason-lspconfig').setup()
 
     for server, settings in pairs(servers) do
-      settings.capabilities = require('blink.cmp').get_lsp_capabilities()
+      settings.capabilities = vim.tbl_deep_extend('force', {}, capabilities, settings.capabilities or {})
       vim.lsp.config(server, settings)
     end
   end,

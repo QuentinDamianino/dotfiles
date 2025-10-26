@@ -45,7 +45,13 @@ return {
     },
 
     snippets = { preset = 'luasnip' },
-    fuzzy = { implementation = 'lua' },
+    fuzzy = {
+      implementation = 'lua',
+      sorts = {
+        'score',
+        'sort-text',
+      },
+    },
     signature = { enabled = true },
   },
 }
