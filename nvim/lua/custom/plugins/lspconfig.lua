@@ -153,6 +153,7 @@ return {
     for server, settings in pairs(servers) do
       settings.capabilities = vim.tbl_deep_extend('force', {}, capabilities, settings.capabilities or {})
       vim.lsp.config(server, settings)
+      vim.lsp.enable(server)
     end
   end,
 }
