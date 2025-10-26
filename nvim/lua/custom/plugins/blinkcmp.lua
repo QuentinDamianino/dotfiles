@@ -49,7 +49,7 @@ return {
       implementation = 'lua',
       sorts = {
         'score',
-        'sort-text',
+        'sort_text',
       },
     },
     signature = { enabled = true },
