@@ -137,6 +137,7 @@ return {
           },
         },
       },
+      laravel_ls = {},
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
@@ -145,6 +146,7 @@ return {
       'markdownlint',
       'prettier',
       'pint',
+      'phpstan',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
