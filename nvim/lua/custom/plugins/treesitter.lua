@@ -4,8 +4,27 @@ return {
   branch = 'master',
   dependencies = 'nvim-treesitter/nvim-treesitter-textobjects',
   config = function()
-    require('nvim-treesitter.configs').setup({
-      ensure_installed = { 'c', 'lua', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'php', 'phpdoc', 'javascript', 'typescript', 'css', 'html', 'blade', 'twig', 'yaml', 'json' },
+    require('nvim-treesitter.configs').setup {
+      ensure_installed = {
+        'c',
+        'lua',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+        'php',
+        'phpdoc',
+        'javascript',
+        'typescript',
+        'css',
+        'html',
+        'blade',
+        'twig',
+        'yaml',
+        'json',
+        'go',
+      },
       auto_install = true,
       highlight = {
         enable = true,
@@ -25,7 +44,7 @@ return {
           },
         },
       },
-    })
+    }
 
     vim.api.nvim_create_autocmd('FileType', {
       pattern = 'php',

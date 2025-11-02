@@ -138,6 +138,7 @@ return {
         },
       },
       laravel_ls = {},
+      gopls = {},
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
