@@ -1,6 +1,5 @@
 # set modifier
-set $super Mod4
-set $alt Mod1
+set $super Mod1
 
 # set font
 font pango:0xProtoNerdFont 9
@@ -46,7 +45,6 @@ bindsym XF86AudioStop exec mpc stop
 
 # kill focused window
 bindsym $super+shift+Q kill
-bindsym $alt+F4 kill
 
 # change focus
 bindsym $super+Left focus left
@@ -90,8 +88,6 @@ workspace 9 output DisplayPort-0
 workspace 0 output DisplayPort-1
 
 # switch to workspace
-bindsym $alt+Control+Right workspace next
-bindsym $alt+Control+Left workspace prev
 bindsym $super+1 workspace 1
 bindsym $super+2 workspace 2
 bindsym $super+3 workspace 3
