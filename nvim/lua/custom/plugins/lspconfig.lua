@@ -139,6 +139,12 @@ return {
       },
       laravel_ls = {},
       gopls = {},
+      ts_ls = {},
+      eslint = {
+        settings = {
+          workingDirectories = { mode = 'auto' },
+        },
+      },
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
