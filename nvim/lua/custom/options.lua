@@ -1,3 +1,5 @@
+vim.g.have_nerd_font = true
+
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
@@ -14,7 +16,7 @@ vim.opt.title = true
 
 vim.opt.termguicolors = true
 
-vim.opt.spell = true
+vim.opt.spell = false
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true

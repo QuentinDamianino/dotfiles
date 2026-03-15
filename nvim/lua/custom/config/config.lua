@@ -7,9 +7,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'floaterm',
+  pattern = { 'markdown', 'text', 'gitcommit', 'plaintex' },
   callback = function()
-    vim.opt_local.spell = false
+    vim.opt_local.spell = true
   end,
 })
 

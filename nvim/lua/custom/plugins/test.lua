@@ -8,4 +8,7 @@ return {
     { '<Leader>tv', ':silent TestVisit<CR>', desc = 'Test visit' },
   },
   dependencies = { 'voldikss/vim-floaterm' },
+  init = function()
+    vim.g['test#strategy'] = 'floaterm'
+  end,
 }

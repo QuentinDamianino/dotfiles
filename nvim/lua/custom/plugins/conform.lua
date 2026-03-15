@@ -32,6 +32,7 @@ return {
       javascriptreact = { 'prettier' },
       typescriptreact = { 'prettier' },
       php = { 'pint' },
+      go = { 'goimports', 'gofumpt' },
     },
   },
 }
